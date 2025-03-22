@@ -1,38 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- FONT AWESOME -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- MAIN CSS -->
     <link rel="stylesheet" href="styles.css">
     <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
     <script>
-        (function(){
+        (function () {
             emailjs.init("YOUR_USER_ID"); // Replace with your EmailJS user ID
         })();
-    
-        document.getElementById('contact-form').addEventListener('submit', function(event) {
+
+        document.getElementById('contact-form').addEventListener('submit', function (event) {
             event.preventDefault();
-    
+
             // Send the email
             emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', this)
-                .then(function() {
+                .then(function () {
                     alert('Message sent successfully!');
-                }, function(error) {
+                }, function (error) {
                     alert('Failed to send message. Please try again later.');
                     console.error('EmailJS Error:', error);
                 });
         });
     </script>
-    
+
     <title>Portfolio</title>
 </head>
+
 <body>
     <!-- Header design -->
-     <header class="header">
+    <header class="header">
         <a href="images/logo (1)-fotor-bg-remover-20241016224821.png" class="logo">Portfolio</a>
 
 
@@ -43,19 +47,21 @@
             <a href="#about">About</a>
             <a href="#services">Projects</a>
             <a href="#portfolio">Experience </a>
-                <a href="#skills">Skills</a>
-                <a href="#contact">Contact</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
         </nav>
-     </header>
+    </header>
 
-     <!-- HOME SECTION DEISGN -->
+    <!-- HOME SECTION DEISGN -->
 
-     <section class="home" id="home">
+    <section class="home" id="home">
         <div class="home-content">
             <h3>Hi, Myself</h3>
             <h1>Palak Meena</h1>
             <h3>And I'm a <span class="multiple-text"> </span></h3>
-            <p>I'm a web designer and developer who loves creating websites that not only look great but are also easy to use. I focus on using the latest web technologies to build responsive and user-friendly sites. My goal is to turn your ideas into reality with clean design and code that works.</p>
+            <p>I'm a web designer and developer who loves creating websites that not only look great but are also easy
+                to use. I focus on using the latest web technologies to build responsive and user-friendly sites. My
+                goal is to turn your ideas into reality with clean design and code that works.</p>
             <div class="social-media">
                 <a href="https://www.linkedin.com/in/palak-meena-b01104245"><i class="fa-brands fa-linkedin"></i></a>
                 <a href="https://github.com/Palakmeena"><i class="fa-brands fa-github"></i></a>
@@ -63,17 +69,17 @@
                 <a href="https://www.instagram.com/palak_meenaa_/"><i class="fa-brands fa-instagram"></i></a>
             </div>
 
-            <a href="Resources/Palak Meena_R.pdf" class="btn">Resume</a>
+            <a href="Resources/PalakkMeenaa.pdf" class="btn">Resume</a>
         </div>
 
         <div class="home-img">
             <img src="images/Untitled design.jpg" alt="">
         </div>
-     </section>
+    </section>
 
-     <!-- ABOUT SECTION DESIGN -->
+    <!-- ABOUT SECTION DESIGN -->
 
-     <section class="about" id="about">
+    <section class="about" id="about">
         <div class="about-img">
             <img src="images/Untitled design.png" alt="">
         </div>
@@ -81,28 +87,107 @@
         <div class="about-content">
             <h2 class="heading">ABOUT <span>Me</span></h2>
             <ul class="animated-list">
-                <li>I'm a Computer Science student currently pursuing my BTech (Bachelor's of Technology) at Medicaps University, Indore, India, with a strong passion for technology and programming.</li>
-                <li>Through my studies and projects, I've strengthened my problem-solving skills and gained hands-on experience in software development. I’m particularly excited about areas like artificial intelligence, web development, and cybersecurity, and I’m always eager to learn and explore new things.</li>
-                <li>I'm looking forward to applying my skills and passion to real-world challenges, contributing to a dynamic team, and making a positive impact in the tech industry.</li>
+                <li>I'm a Computer Science student currently pursuing my BTech (Bachelor's of Technology) at Medicaps
+                    University, Indore, India, with a strong passion for technology and programming.</li>
+                <li>Through my studies and projects, I've strengthened my problem-solving skills and gained hands-on
+                    experience in software development. I’m particularly excited about areas like artificial
+                    intelligence, web development, and cybersecurity, and I’m always eager to learn and explore new
+                    things.</li>
+                <li>I'm looking forward to applying my skills and passion to real-world challenges, contributing to a
+                    dynamic team, and making a positive impact in the tech industry.</li>
             </ul>
         </div>
-        
-     </section>
 
-     <!-- services SECTION -->
+    </section>
 
-     <section class="services" id="services">
+    <!-- projects SECTION -->
+
+    <section class="services" id="services">
         <h2 class="heading">My <span>Projects</span></h2>
         <div class="services-container">
             <div class="services-box">
                 <i class="fa-solid fa-code"></i>
                 <h3>Civic Sarathi</h3>
-                <p>A platform that simplifies constitutional laws and articles, helping citizens understand them through games, quizzes, and interactive content, making learning legal rights and civic duties fun and engaging.
+                <p>A platform that simplifies constitutional laws and rights through games, quizzes, and interactive
+                    content. It makes learning legal rights and civic duties engaging, ensuring easy understanding for
+                    all citizens.
+
+
+                </p>
+                <a href="https://civic-sarathi.vercel.app/" class="btn">See here</a>
+            </div>
+
+
+
+            <div class="services-box">
+                <i class="fa-solid fa-code"></i>
+                <h3>Upskillr</h3>
+                <p>A student guidance platform offering structured roadmaps, curated resources, and internship
+                    opportunities. It provides a semester-wise learning path and industry-recommended materials for
+                    career success</p>
+                <a href="https://github.com/Palakmeena/Upskillr__skillUpStandOut-" class="btn">See here</a>
+            </div>
+
+
+
+            <div class="services-box">
+                <i class="fa-solid fa-code"></i>
+                <h3>Farmers Site</h3>
+                <p>A website for one of my batchmates to help farmers with crop prices, weather updates, fertilizer
+                    recommendations, expert advice, government schemes, and a marketplace for buying and selling
+                    agricultural products.
 
 
 
 
 
+
+
+                </p>
+
+                <a href="https://github.com/Palakmeena/Farmers-site" class="btn">See here</a>
+            </div>
+
+            <div class="services-box">
+                <i class="fa-solid fa-code"></i>
+                <!-- <img src="../Portfolio-site/images/gdg.jpg" alt="" width="300px" height="300px"> -->
+                <h3>Rock Paper Scissors</h3>
+                <p>I built this Rock Paper Scissors game during my initial learning phase using HTML, CSS, and
+                    JavaScript. It features a simple UI, responsive design, and basic game logic for an interactive
+                    experience.
+
+
+
+
+
+
+
+                </p>
+                <a href="https://github.com/Palakmeena/Rock-Paper-Scissors-Game" class="btn">See here</a>
+            </div>
+
+            <div class="services-box">
+                <i class="fa-solid fa-code"></i>
+                <h3>Piet Mondrian painting</h3>
+                <p>This project replicate a Piet Mondrian painting using CSS Grid and Flexbox. It showcases an abstract
+                    composition with bold colors, demonstrating my early learning of CSS layout techniques.
+
+
+
+
+
+
+
+                </p>
+                <a href="https://github.com/Palakmeena/Mondrain-Painting" class="btn">See here</a>
+            </div>
+
+
+            <div class="services-box">
+                <i class="fa-solid fa-code"></i>
+                <h3>Employee Management System</h3>
+                <p>Made an Employee Management System using Java Spring to manage data, track attendance, and automate
+                    payroll.
 
 
 
@@ -126,35 +211,20 @@
 
 
                 </p>
-                <a href="https://civic-sarathi.vercel.app/" class="btn">See here</a>
+                <a href="https://github.com/Palakmeena/Rock-Paper-Scissors-Game" class="btn">See Here</a>
             </div>
-       
-
-         
-                <div class="services-box">
-                    <i class="fa-solid fa-code"></i>
-                    <h3>Web Development</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla iste beatae eveniet veniam earum accusamus eum consequuntur unde, dolorem facere commodi voluptas officia repellendus culpa qui sequi necessitatibus! Adipisci, beatae</p>
-                    <a href="" class="btn">Read More</a>
-                </div>
-          
-
-               
-                    <div class="services-box">
-                        <i class="fa-solid fa-code"></i>
-                        <h3>Web Development</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla iste beatae eveniet veniam earum accusamus eum consequuntur unde, dolorem facere commodi voluptas officia repellendus culpa qui sequi necessitatibus! Adipisci, beatae</p>
-                        <a href="" class="btn">Read More</a>
-                    </div>
-                
-                    
-
-     </section>
 
 
-     <!-- ACHIVEMENTS -->
 
-     <section class="portfolio" id="portfolio">
+    </section>
+
+
+
+
+
+    <!-- ACHIVEMENTS -->
+
+    <section class="portfolio" id="portfolio">
         <h2 class="heading">Experiences & <span>Achievements</span></h2>
 
         <div class="portfolio-container">
@@ -163,12 +233,9 @@
                 <img src="images/resize-1729009924229611228hachnore2.jpg" alt="">
                 <div class="portfolio-layer">
                     <h4>Hack'Ndore PreFinalist</h4>
-                    <p>I participated in the Hack’Ndore Hackathon, where my team created a Digital Employee Management System to streamline municipal workshop operations by managing employee data, tracking attendance, and integrating payroll.
-
-
-
-
-
+                    <p>I led my team in the Hack’Ndore Hackathon, where we developed a Digital Employee Management
+                        System to optimize municipal workshop operations. Our solution streamlined employee data
+                        management, attendance tracking, and payroll integration for better efficiency.
 
 
 
@@ -185,7 +252,9 @@
                 <img src="images/ssoc.jpg" alt="">
                 <div class="portfolio-layer">
                     <h4>Social Summer of Code</h4>
-                    <p>I took part in Social Summer of Code, where I worked on real open-source projects, learned from experienced mentors, and improved my coding skills. It was a great way to contribute to the community while growing as a developer.
+                    <p>I took part in Social Summer of Code, where I worked on real open-source projects, learned from
+                        experienced mentors, and improved my coding skills. It was a great way to contribute to the
+                        community while growing as a developer.
 
 
 
@@ -197,208 +266,279 @@
             </div>
 
             <div class="portfolio-box">
-                <img src="images/gdg.jpg" alt="">
+                <img src="images/gdg.png" alt="">
                 <div class="portfolio-layer">
                     <h4>Google Developer Groups</h4>
-                    <p>Serving as a GDG Core Team Member, where I helped organize tech events, workshops, and meetups, fostering a strong developer community while enhancing my leadership and teamwork skills.
-                        </p>
+                    <p>Serving as a GDG Core Team Member, where I helped organize tech events, workshops, and meetups,
+                        fostering a strong developer community while enhancing my leadership and teamwork skills.
+                    </p>
                 </div>
             </div>
 
-            
+            <div class="portfolio-box">
+                <img src="images/unstopnew.png" alt="">
+                <div class="portfolio-layer">
+                    <h4>Unstop Campus Ambassador</h4>
+                    <p>As an Unstop Campus Ambassador, I promoted hackathons, competitions, and career opportunities,
+                        engaging students and professionals. I facilitated participation, organized outreach, and
+                        connected students with resources to boost their skills and careers.
+
+
+
+
+
+
+
+
+                    </p>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="images/gdgnew.png" alt="">
+                <div class="portfolio-layer">
+                    <h4>Google Gen Ai</h4>
+                    <p>I successfully completed the Google Gen AI Cloud program, earning the Gen AI Cloud Badge for my
+                        expertise in Generative AI and cloud technologies.My achievement was recognized with exclusive
+                        Google goodies, making it a truly rewarding experience.
+
+
+
+
+
+
+
+
+
+                    </p>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="images/cloudClubs.png" alt="">
+                <div class="portfolio-layer">
+                    <h4>AWS Cloud community day</h4>
+                    <p> Joined AWS Cloud Community Day, learned about the latest cloud technologies, connected with
+                        experts, and explored AWS innovations. A great experience to deepen my cloud knowledge!
+
+
+
+
+
+
+
+                    </p>
+
+                </div>
+            </div>
+
+
 
 
         </div>
-     </section>
+    </section>
 
 
-     <!-- SKILLS SECTION -->
-<section class="skills" id="skills">
-    <h2 class="heading">Technical <span>Skills</span></h2>
+    <!-- SKILLS SECTION -->
+    <section class="skills" id="skills">
+        <h2 class="heading">Technical <span>Skills</span></h2>
 
-    <!-- Programming Languages -->
-    <div class="skills-category">
-        <h3 class="subheading">Languages</h3>
-        <div class="skills-container">
-            <div class="skill-bar">
-                <i class="fa-brands fa-java"></i>
-                <div class="skill-info">
-                    <span>Java</span>
-                    <div class="progress-line">
-                        <span style="width: 85%;"></span>
+        <!-- Programming Languages -->
+        <div class="skills-category">
+            <h3 class="subheading">Languages</h3>
+            <div class="skills-container">
+                <div class="skill-bar">
+                    <i class="fa-brands fa-java"></i>
+                    <div class="skill-info">
+                        <span>Java</span>
+                        <div class="progress-line">
+                            <span style="width: 85%;"></span>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="skill-bar">
-                <i class="fa-solid fa-c"></i>
-                <div class="skill-info">
-                    <span>C</span>
-                    <div class="progress-line">
-                        <span style="width: 80%;"></span>
+                <div class="skill-bar">
+                    <i class="fa-solid fa-c"></i>
+                    <div class="skill-info">
+                        <span>C</span>
+                        <div class="progress-line">
+                            <span style="width: 80%;"></span>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="skill-bar">
-                <i class="fa-solid fa-c"></i>
-                <div class="skill-info">
-                    <span>C++</span>
-                    <div class="progress-line">
-                        <span style="width: 75%;"></span>
+                <div class="skill-bar">
+                    <i class="fa-solid fa-c"></i>
+                    <div class="skill-info">
+                        <span>C++</span>
+                        <div class="progress-line">
+                            <span style="width: 75%;"></span>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="skill-bar">
-                <i class="fa-brands fa-python"></i>
-                <div class="skill-info">
-                    <span>Python</span>
-                    <div class="progress-line">
-                        <span style="width: 85%;"></span>
+                <div class="skill-bar">
+                    <i class="fa-brands fa-python"></i>
+                    <div class="skill-info">
+                        <span>Python</span>
+                        <div class="progress-line">
+                            <span style="width: 85%;"></span>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="skill-bar">
-                <i class="fa-brands fa-js"></i>
-                <div class="skill-info">
-                    <span>JavaScript</span>
-                    <div class="progress-line">
-                        <span style="width: 80%;"></span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Frameworks -->
-    <div class="skills-category">
-        <h3 class="subheading">Frameworks</h3>
-        <div class="skills-container">
-            <div class="skill-bar">
-                <i class="fa-brands fa-react"></i>
-                <div class="skill-info">
-                    <span>React</span>
-                    <div class="progress-line">
-                        <span style="width: 80%;"></span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="skill-bar">
-                <i class="fa-brands fa-js"></i>
-                <div class="skill-info">
-                    <span>Next.js</span>
-                    <div class="progress-line">
-                        <span style="width: 70%;"></span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="skill-bar">
-                <i class="fa-brands fa-java"></i>
-                <div class="skill-info">
-                    <span>Spring</span>
-                    <div class="progress-line">
-                        <span style="width: 75%;"></span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Libraries -->
-    <div class="skills-category">
-        <h3 class="subheading">Libraries</h3>
-        <div class="skills-container">
-            <div class="skill-bar">
-                <i class="fa-solid fa-cubes"></i>
-                <div class="skill-info">
-                    <span>Material UI</span>
-                    <div class="progress-line">
-                        <span style="width: 75%;"></span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="skill-bar">
-                <i class="fa-solid fa-cubes"></i>
-                <div class="skill-info">
-                    <span>Ant Design</span>
-                    <div class="progress-line">
-                        <span style="width: 70%;"></span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="skill-bar">
-                <i class="fa-solid fa-cubes"></i>
-                <div class="skill-info">
-                    <span>Bootstrap</span>
-                    <div class="progress-line">
-                        <span style="width: 80%;"></span>
+                <div class="skill-bar">
+                    <i class="fa-brands fa-js"></i>
+                    <div class="skill-info">
+                        <span>JavaScript</span>
+                        <div class="progress-line">
+                            <span style="width: 80%;"></span>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
 
+        <!-- Frameworks -->
+        <div class="skills-category">
+            <h3 class="subheading">Frameworks</h3>
+            <div class="skills-container">
+                <div class="skill-bar">
+                    <i class="fa-brands fa-react"></i>
+                    <div class="skill-info">
+                        <span>React</span>
+                        <div class="progress-line">
+                            <span style="width: 80%;"></span>
+                        </div>
+                    </div>
+                </div>
 
+                <div class="skill-bar">
+                    <i class="fa-brands fa-js"></i>
+                    <div class="skill-info">
+                        <span>Next.js</span>
+                        <div class="progress-line">
+                            <span style="width: 70%;"></span>
+                        </div>
+                    </div>
+                </div>
 
-
-<section class="contact" id="contact">
-    <h2 class="heading">Contact <span>Me</span></h2>
-
-    <div class="contact-container">
-        <!-- Left side for the text -->
-        <div class="contact-info">
-            <h3>Let's <span>Connect</span></h3>
-            <p>Hey there! Ready to chat? Whether it's about projects, opportunities, or just a friendly conversation, I'm here. Drop me a message, and let's make things happen</p>
-            <ul>
-                <li><strong>Email:</strong> palakmeena14@gmail.com</li>
-                <li><strong>Phone:</strong> 9826025810</li>
-            </ul>
-
-            <!-- Social media links -->
-            <div class="social-media">
-                <a href="https://www.linkedin.com/in/palak-meena-b01104245"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="https://github.com/Palakmeena"><i class="fa-brands fa-github"></i></a>
-                <a href="https://x.com/Palak_Meena14"><i class="fa-solid fa-x"></i></a>
-                <a href="https://www.instagram.com/palak_meenaa_/"><i class="fa-brands fa-instagram"></i></a>
+                <div class="skill-bar">
+                    <i class="fa-brands fa-java"></i>
+                    <div class="skill-info">
+                        <span>Spring Boot</span>
+                        <div class="progress-line">
+                            <span style="width: 75%;"></span>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 
-        <!-- Right side for the form -->
-        <div class="contact-form">
-            <form action="#" id="contact-form">
-                <div class="input-box">
-                    <input type="text" name="name" placeholder="Full Name" required>
+        <!-- Libraries -->
+        <!-- Libraries -->
+        <div class="skills-category">
+            <h3 class="subheading">Libraries</h3>
+            <div class="skills-container">
+                <div class="skill-bar">
+                    <i class="fa-brands fa-react"></i> <!-- Material UI (React-based) -->
+                    <div class="skill-info">
+                        <span>Material UI</span>
+                        <div class="progress-line">
+                            <span style="width: 75%;"></span>
+                        </div>
+                    </div>
                 </div>
-                <div class="input-box">
-                    <input type="email" name="email" placeholder="Email Address" required>
+
+                <div class="skill-bar">
+                    <i class="fa-solid fa-layer-group"></i> <!-- Ant Design -->
+                    <div class="skill-info">
+                        <span>Ant Design</span>
+                        <div class="progress-line">
+                            <span style="width: 70%;"></span>
+                        </div>
+                    </div>
                 </div>
-                <div class="input-box">
-                    <input type="number" name="mobile" placeholder="Mobile Number" required>
+
+                <div class="skill-bar">
+                    <i class="fa-brands fa-bootstrap"></i> <!-- Bootstrap -->
+                    <div class="skill-info">
+                        <span>Bootstrap</span>
+                        <div class="progress-line">
+                            <span style="width: 80%;"></span>
+                        </div>
+                    </div>
                 </div>
-                <div class="input-box">
-                    <textarea name="message" placeholder="Your Message" required></textarea>
+
+                <div class="skill-bar">
+                    <i class="fa-brands fa-figma"></i> <!-- Figma -->
+                    <div class="skill-info">
+                        <span>Figma</span>
+                        <div class="progress-line">
+                            <span style="width: 85%;"></span>
+                        </div>
+                    </div>
                 </div>
-                <div class="btn-container">
-                    <input type="submit" value="Send Message" class="btn">
-                </div>
-            </form>
+            </div>
         </div>
-    </div>
-</section>
+    </section>
+
+
+
+
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact <span>Me</span></h2>
+
+        <div class="contact-container">
+            <!-- Left side for the text -->
+            <div class="contact-info">
+                <h3>Let's <span>Connect</span></h3>
+                <p>Hey there! Ready to chat? Whether it's about projects, opportunities, or just a friendly
+                    conversation, I'm here. Drop me a message, and let's make things happen</p>
+                <ul>
+                    <li><strong>Email:</strong> palakmeena14@gmail.com</li>
+                    <li><strong>Phone:</strong> 9826025810</li>
+                </ul>
+
+                <!-- Social media links -->
+                <div class="social-media">
+                    <a href="https://www.linkedin.com/in/palak-meena-b01104245"><i
+                            class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/Palakmeena"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://x.com/Palak_Meena14"><i class="fa-solid fa-x"></i></a>
+                    <a href="https://www.instagram.com/palak_meenaa_/"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+
+            <!-- Right side for the form -->
+            <div class="contact-form">
+                <form action="#" id="contact-form">
+                    <div class="input-box">
+                        <input type="text" name="name" placeholder="Full Name" required>
+                    </div>
+                    <div class="input-box">
+                        <input type="email" name="email" placeholder="Email Address" required>
+                    </div>
+                    <div class="input-box">
+                        <input type="number" name="mobile" placeholder="Mobile Number" required>
+                    </div>
+                    <div class="input-box">
+                        <textarea name="message" placeholder="Your Message" required></textarea>
+                    </div>
+                    <div class="btn-container">
+                        <input type="submit" value="Send Message" class="btn">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
 
 
 
 
 
-     <!-- FOOTER DESIGN -->
-      <footer class="footer">
+    <!-- FOOTER DESIGN -->
+    <footer class="footer">
         <div class="footer-text">
             <p>Built by Me with Love❤️ and coffee☕</p>
         </div>
@@ -406,16 +546,17 @@
         <div class="footer-iconTop">
             <a href="#home"><i class="fa-solid fa-angle-up"></i></a>
         </div>
-      </footer>
-     
-      <!-- SCROLL REVEAL -->
-      <script src="https://unpkg.com/scrollreveal"></script>
+    </footer>
 
-      <!-- TYPED JS -->
+    <!-- SCROLL REVEAL -->
+    <script src="https://unpkg.com/scrollreveal"></script>
 
-      <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <!-- TYPED JS -->
 
-      <!-- MAIN JS -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <!-- MAIN JS -->
     <script src="main.js"></script>
 </body>
+
 </html>

@@ -76,7 +76,7 @@ section{
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: row; /* Side-by-side on desktop */
+    flex-direction: row; 
     text-align: left;
 }
 
@@ -87,7 +87,7 @@ section{
 }
 
 .home-content h3 {
-    font-size: 2.6rem; /* Consistent size for mobile and desktop */
+    font-size: 2.6rem; 
 }
 
 .home-img img {
@@ -153,42 +153,42 @@ span {
     box-shadow: none;
 }
 
-/* Mobile Styles (screens below 768px) */
+
 @media (max-width: 768px) {
     .home {
-        flex-direction: column; /* Stack vertically on mobile */
-        text-align: center; /* Center text on mobile */
+        flex-direction: column; 
+        text-align: center; 
     }
 
     .home-img {
-        order: 1; /* Show image first on mobile */
-        margin-bottom: 2rem; /* Add some space between image and text */
+        order: 1; 
+        margin-bottom: 2rem; 
     }
 
     .home-img img {
-        width: 90vw; /* Full width on mobile */
+        width: 90vw;
     }
 
     .home-content {
-        order: 2; /* Show content second on mobile */
+        order: 2;
     }
 
     .home-content h1 {
-        font-size: 5.6rem; /* Keep the same size as desktop for the main title */
+        font-size: 5.6rem; 
     }
 
     .home-content h3 {
-        font-size: 2.6rem; /* Set desired size for "And I'm a FullStack Developer" */
+        font-size: 2.6rem; 
     }
 
     .home-content h3:first-of-type {
-        font-size: 2.6rem; /* Set desired size for "Hi, Myself" */
+        font-size: 2.6rem; 
     }
 }
 
 
 
-/* chatgpt generated */
+
 
 
 
@@ -205,18 +205,18 @@ span {
     background: var(--snd-bg-color);
 }
 
-/* Image styles */
+
 .about-img img {
     width: 35vw;
 }
 
-/* Heading styles */
+
 .heading {
     text-align: center;
     font-size: 4.5rem;
 }
 
-/* Content heading styles */
+
 .about-content h2 {
     text-align: left;
     line-height: 1.2;
@@ -226,29 +226,29 @@ span {
     font-size: 2.6rem;
 }
 
-/* Paragraph styles */
+
 .about-content p {
     font-size: 1.6rem;
     margin: 2rem 0 3rem;
 }
 
-/* Mobile Styles (screens below 768px) */
+
 @media (max-width: 768px) {
     .about {
-        flex-direction: column; /* Stack vertically on mobile */
-        text-align: center; /* Center text on mobile */
+        flex-direction: column; 
+        text-align: center;
     }
 
     .about-img {
-        margin-bottom: 2rem; /* Add space between image and text */
+        margin-bottom: 2rem; 
     }
 
     .about-content {
-        text-align: center; /* Center text under the image */
+        text-align: center;
     }
 
     .about-content h2 {
-        text-align: center; /* Center heading on mobile */
+        text-align: center;
     }
 }
 
@@ -361,31 +361,19 @@ span {
     margin: .3rem 0 1rem;
 }
 
-/* .portfolio-layer a{
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    width: 5rem;
-    background: var(--text-color);
-    border-radius: 50%;
-}
 
-.portfolio-layer a i{
-    font-size: 2rem;
-    color: var(--snd-bg-color);
-} */
 
 .portfolio-layer i {
-    font-size: 4rem; /* Keep the larger size */
-    color: #fff; /* Change the icon color back to white */
+    font-size: 4rem; 
+    color: #fff; 
 }
 
 .portfolio-layer a {
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    width: 8rem; /* Keep larger square size */
-    height: 8rem; /* Keep height for a perfect square */
+    width: 8rem; 
+    height: 8rem; 
     background: var(--text-color);
     border-radius: 50%;
 }
@@ -393,55 +381,14 @@ span {
 
 
 
-/* .contact h2{
-    margin-bottom: 3rem;
-}
 
-.contact form {
-    max-width: 70rem;
-    margin: 1rem auto;
-    text-align: center;
-    margin-bottom: 3rem;
-}
-
-.contact form .input-box{
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-.contact form .input-box input, .contact form textarea{
-    width: 100%;
-    padding: 1.5rem;
-    font-size: 1.6rem;
-    color: var(--text-color);
-    background: var(--snd-bg-color);
-    border-radius: .8rem;
-    margin: .7rem 0;
-}
-
-.contact form .input-box input{
-    width: 49%;
-}
-
-.contact form textarea{
-    resize: none;
-}
-
-.contact form .btn{
-    margin-top: 2rem;
-    cursor: pointer;
-
-} */
-
-/* 2ND */
 
 .contact h2 {
     margin-bottom: 3rem;
     text-align: center;
 }
 
-/* Container for the contact section */
+
 .contact-container {
     display: flex;
     justify-content: space-between;
@@ -453,7 +400,6 @@ span {
     flex-wrap: wrap;
 }
 
-/* Left side - Contact info */
 .contact-info {
     flex: 1;
     max-width: 45%;
@@ -487,7 +433,7 @@ span {
     color: var(--main-color);
 }
 
-/* Social media links styling */
+
 .social-media {
     margin-top: 2rem;
 }
@@ -503,7 +449,6 @@ span {
     color: var(--hover-color);
 }
 
-/* Right side - Contact form */
 .contact-form {
     flex: 1;
     max-width: 45%;
@@ -520,7 +465,7 @@ span {
     margin-bottom: 1.5rem;
 }
 
-/* Input and textarea styles */
+
 .contact-form .input-box input,
 .contact-form .input-box textarea {
     width: 100%;
@@ -533,13 +478,13 @@ span {
     border: 1px solid var(--border-color);
 }
 
-/* Ensure the textarea has a fixed height */
+
 .contact-form .input-box textarea {
     resize: none;
     height: 150px;
 }
 
-/* Centering the Send Message button */
+
 .btn-container {
     display: flex;
     justify-content: center;
@@ -555,7 +500,7 @@ span {
     font-size: 1.6rem;
 }
 
-/* Make it responsive for mobile devices */
+
 @media (max-width: 768px) {
     .contact-container {
         flex-direction: column;
@@ -571,21 +516,21 @@ span {
         margin-bottom: 2rem;
     }
 
-    /* Adjust input boxes for better visibility on mobile */
+   
     .contact-form .input-box {
-        width: 100%; /* Ensure full width */
+        width: 100%; 
     }
 
     .contact-form .input-box input,
     .contact-form .input-box textarea {
-        padding: 1.5rem; /* Maintain padding for aesthetics */
-        font-size: 1.6rem; /* Consistent font size */
-        margin: 1rem 0; /* Centered margin for spacing */
+        padding: 1.5rem; 
+        font-size: 1.6rem; 
+        margin: 1rem 0; 
     }
 }
 
 
-/* CHATGPT GENERATED CONTACT */
+
 
 
 
@@ -599,44 +544,21 @@ span {
     background: var(--snd-bg-color);
 }
 
-/* .footer-text{
-    font-size: 1.6rem;
-
-}
-
-.footer-iconTop{
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    padding: .8rem  1rem;
-    background: var(--main-color);
-    border-radius: .8rem;
-    transition: .5s ease;
-}
-
-.footer-iconTop a:hover{
-    box-shadow: 0 0 1rem var(--main-color);
-}
-
-.footer-iconTop a i{
-    font-size: 2.4rem;
-    color: var(--snd-bg-color);
-} */
 
 
 .footer {
     display: flex;
-    justify-content: center; /* Center all content */
+    justify-content: center; 
     align-items: center;
     flex-wrap: wrap;
     padding: 2rem 9%;
     background: var(--snd-bg-color);
-    text-align: center; /* Center text within the footer */
+    text-align: center;
 }
 
 .footer-text {
     font-size: 1.6rem;
-    margin: 0.5rem; /* Add some margin for spacing */
+    margin: 0.5rem; 
 }
 
 .footer-iconTop {
@@ -647,7 +569,7 @@ span {
     background: var(--main-color);
     border-radius: .8rem;
     transition: .5s ease;
-    margin: 0.5rem; /* Add some margin for spacing */
+    margin: 0.5rem;
 }
 
 .footer-iconTop a:hover {
@@ -661,7 +583,7 @@ span {
 
 
 
-/* SKILL SECTION CSS */
+
 
 .skills {
     padding: 10rem 9% 2rem;
@@ -669,7 +591,7 @@ span {
     color: var(--text-color);
 }
 
-/* Removed the color from the heading class so it does not override the global heading style */
+
 .heading {
     text-align: center;
     font-size: 3.6rem;
@@ -729,7 +651,7 @@ span {
 }
 
 
-/* BREAKPOINT */
+
 @media(max-width:1200px){
     html{
         font-size: 55%;
@@ -829,7 +751,7 @@ span {
     }
 }
 
-/* points */
+
 
 @media (max-width:617px){
     .portfolio-container{
@@ -858,7 +780,7 @@ span {
 }
 
 
-/* ANIMATED BULLETENT POINT FOR ABOUT PAGE */
+
 
 .animated-list {
     list-style-type: none;
@@ -883,7 +805,7 @@ span {
     top: 5px;
     width: 10px;
     height: 10px;
-    background-color: #59B2F4; /* Custom bullet color */
+    background-color: #59B2F4; 
     border-radius: 50%;
     animation: scaleUp 0.6s ease-in-out forwards;
 }
@@ -909,33 +831,27 @@ span {
 }
 
 
-/* imagelogo  */
-/* Basic styling for the logo image */
+
 .logo-img {
-    max-width: 150px; /* Maximum width for larger screens */
-    height: auto;     /* Maintain aspect ratio */
-    display: block;   /* Ensure it behaves like a block-level element */
-    margin: 0 auto;   /* Center it horizontally */
+    max-width: 150px; 
+    height: auto;     
+    display: block;   
+    margin: 0 auto;  
 }
 
-/* Make the logo smaller on smaller screens */
+
 @media (max-width: 768px) {
     .logo-img {
-        max-width: 120px; /* Shrink the logo on tablets and smaller screens */
+        max-width: 120px; 
     }
 }
 
-/* Further reduce size on mobile devices */
+
 @media (max-width: 480px) {
     .logo-img {
-        max-width: 100px; /* Even smaller for mobile screens */
+        max-width: 100px; 
     }
 }
-
-
-
-
-
 
 
 
