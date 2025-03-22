@@ -75,24 +75,26 @@ const typed =new Typed('.multiple-text',{
 
 
 
-// EMAIL Authentication 
+document.getElementById("contact-form").addEventListener("submit", async function(event) {
+    event.preventDefault();
+    
+    let form = event.target;
+    let formData = new FormData(form);
+    let btn = form.querySelector(".btn");
 
-{/* <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
-<script>
-    (function(){
-        emailjs.init("YOUR_USER_ID"); // Replace with your EmailJS user ID
-    })();
+    try {
+        let response = await fetch(form.action, {
+            method: "POST",
+            body: formData,
+            headers: { "Accept": "application/json" }
+        });
 
-    document.getElementById('contact-form').addEventListener('submit', function(event) {
-        event.preventDefault();
-
-        // Send the email
-        emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', this)
-            .then(function() {
-                alert('Message sent successfully!');
-            }, function(error) {
-                alert('Failed to send message. Please try again later.');
-                console.error('EmailJS Error:', error);
-            });
-    });
-</script> */}
+        if (response.ok) {
+            form.innerHTML = "<p style='color: green; font-size: 18px;'>✅ Thank you! Your message has been sent.</p>";
+        } else {
+            btn.insertAdjacentHTML("afterend", "<p style='color: red;'>❌ Error! Please try again.</p>");
+        }
+    } catch (error) {
+        btn.insertAdjacentHTML("afterend", "<p style='color: red;'>❌ Something went wrong.</p>");
+    }
+});
